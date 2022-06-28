@@ -17,7 +17,7 @@ sudo chmod -R a+x google #r permissions alone were not sufficient
 
 Compilation command
 ```
-protoc --go_out`=./ ./addressbook.proto
+protoc --go_out=./ ./addressbook.proto
 ```
 
 In the example command which writes to and from a phonebook on disk (not included here so far), there is a pretty printed version of the protobuf, which comes from the `writePerson` function [here](https://github.com/protocolbuffers/protobuf/blob/ca17dad213824de92d61fa2c452b84b6567e74a8/examples/go/cmd/list_people/list_people.go#L14)
